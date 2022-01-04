@@ -1,0 +1,9 @@
+.header{
+    text-align: center;
+}
+.dash-header{
+    display: flex;
+}
+.food-card{
+    border: 2px solid black;
+}

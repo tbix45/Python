@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+.container{
+    width: 700px;
+    text-align: center;
+}
+.user_card{
+    border: 2px solid black;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}

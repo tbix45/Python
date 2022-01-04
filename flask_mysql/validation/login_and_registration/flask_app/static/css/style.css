@@ -1,0 +1,13 @@
+.header{
+    text-align: center;
+    margin: 20px 0;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.form{
+    background-color: gray;
+    padding: 15px;
+    border-radius: 15px;
+}

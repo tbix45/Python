@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doggo Show!</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!-- linking a css style sheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <a class="btn btn-danger float-end" href="/logout">Logout</a>
+        <h3>Welcome, {{user.first_name}}</h3>
+        <h2>Welcome to the Doggo Show!</h2>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Breed</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Owner</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for dog in all_dogs%}
+                <tr>
+                    <th scope="row"><a href="/show/{{dog.id}}">{{dog.name}}</a></th>
+                    <th scope="row">{{dog.breed}}</th>
+                    <th scope="row">{{dog.age}}</th>
+                    <th scope="row">{{dog.owner.first_name}}</th>
+                    <th scope="row">
+                        {%if dog.owner.id == user.id %}
+                        <a href="/edit/{{dog.id}}">Edit</a>
+                        |
+                        <a href="/delete/{{dog.id}}">Delete</a>
+                        {%endif%}
+                    </th>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+        <a class="btn btn-info" href="/new_dog">Add a New Doggo!</a>
+    </div>
+</body>
+
+</html>

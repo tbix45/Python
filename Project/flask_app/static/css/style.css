@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+}
+.login_header{
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+    background: #000000d0;
+    /* width: 50%;  */
+    align-items: center;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    padding: 10px;
+}
+.register_form{
+    border: 2px solid black;
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 80%;
+}
+.login_form{
+    border: 2px solid black;
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 80%;
+}
+.dashboard_header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+    text-align: center;
+    background: #000000d0;
+    /* width: 50%;  */
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    margin: 1em;
+    padding: 10px;
+}
+.navbar{
+    /* background-color: black; */
+    padding: 5px;
+}
+.navbar_view{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.seat_buttons{
+    display: flex;
+}
+.dash_header, .total_trip_count{
+    text-align: center;
+    background: #000000d0;
+    /* width: 50%;  */
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    margin: 1em;
+    padding: 10px;
+}
+.flight_card{
+    border: 2px solid black;
+    margin: 20px;
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 5em;
+    text-align: center;
+}
+.save_edit_trip{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 70%;
+}
+.form_container{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.total_trip_count{
+    text-align: center;
+}
+.input{
+    text-align: center;
+}
+.search_box{
+    width: 210px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    text-align: center;
+
+}
+.weather_body{
+    background-image: url('https://source.unsplash.com/1600x900/daily/?airport');
+    background-position: center;
+    background-size: cover;
+}
+.view_trip{
+    background-image: url('https://source.unsplash.com/1600x900/?airport');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+.login_body{
+    background-image: url('https://source.unsplash.com/1600x900/?airport');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+.weather_dash_header{
+    /* background: #000000d0; */
+    display: flex;
+    justify-content: center;
+
+}
+.headertext{
+    background: #000000d0;
+    width: 50%; 
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    margin: 1em;
+    padding: 10px;
+}
+.weather_container, .airport_container{
+    display: flex;
+    justify-content: center;
+    height: 650px;
+    margin: 0;
+}
+.weather_card, .airport_card{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 3em;
+    height: 350px;
+}
+.weather_cardmain, .airport_card{
+    background: #000000d0;
+    color: white;
+    padding: 1em;
+    border-radius: 30px;
+    width: 50%;
+    max-width: 300px;
+    height: 350px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-box{
+    border: none;
+    border-radius: 30px;
+    height: 2em;
+    outline: none;
+    padding: 1em;
+    width: 100%;
+    font-size: 105%;
+}
+.search_button{
+    margin: 1em;
+    border-radius: 30px;
+    border: none;
+    height: 2em;
+    width: 4em;
+    outline: none;
+    font-size: 105%;
+
+}
+.search_button:hover{
+    background: #222;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+h1.temp{
+    margin: 0;
+}
+.weather_link{
+    color: white;
+}
+.table{
+    background: #000000d0;
+    color: white;
+    /* border-radius: 30px; */
+    width: 95%;
+    margin-left: 35px;
+    outline: none;
+}
+
+.dashboard_body, .my_body, .save_edit_body{
+    background-image: url('https://source.unsplash.com/1600x900/?airport');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.save_edit_body, .login_body{
+    height: auto;
+}
+.container{
+    margin-top: 20px;
+}
+
+table th {
+    border: 1px solid silver;
+}
+
+.headerSortDown:after,
+.headerSortUp:after {
+    content: ' ';
+    position: relative;
+    border: 8px solid transparent;
+}
+
+.headerSortDown:after {
+    top: 10px;
+    border-top-color: silver;
+}
+
+.headerSortUp:after {
+    bottom: 15px;
+    border-bottom-color: silver;
+}
+.text-danger{
+    background: #000000d0;
+    padding: 5px;
+    width: 500px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 1px;
+}
+.form-group{
+    margin-bottom: 15px;
+}

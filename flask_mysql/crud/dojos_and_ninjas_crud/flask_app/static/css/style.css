@@ -1,0 +1,30 @@
+.body_container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+
+}
+.rightside{
+    border: 2px solid black;
+    width: 250px;
+    text-align: center;
+}
+.ninja_form{
+    width: 400px;
+}
+.ninja_container{
+margin: 50px 100px;
+}
+.one_dojo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.dojo_with_ninjas{
+    width: 500px;
+    border: 2px solid black;
+}
+.dojo_show_ninjas{
+    margin: 50px;
+}

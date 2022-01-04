@@ -1,0 +1,10 @@
+-- use users;
+-- insert into users (first_name, last_name, email, created_at, updated_at)
+-- values ("Bob", "Bobothy", "bb@gmail.com", NOW(), NOW());
+-- insert into users (first_name, last_name, email, created_at, updated_at)
+-- values ("Bobby", "Bobo", "bab@gmail.com", NOW(), NOW());
+-- select * from users
+-- where first_name like "%a";
+-- UPDATE users SET first_name = 'anotha', last_name='user' WHERE id= 12;
+
+DELETE FROM users WHERE id = 11;

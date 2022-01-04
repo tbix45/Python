@@ -1,0 +1,46 @@
+-- SELECT * FROM dojos
+-- insert into dojos (name, created_at, updated_at)
+-- values ("Red", NOW(), NOW());
+-- insert into dojos (name, created_at, updated_at)
+-- values ("Green", NOW(), NOW());
+-- insert into dojos (name, created_at, updated_at)
+-- values ("Black", NOW(), NOW());
+-- SET SQL_SAFE_UPDATES = 0;
+-- delete from dojos;
+insert into dojos (name, created_at, updated_at)
+values ("Red", NOW(), NOW());
+insert into dojos (name, created_at, updated_at)
+values ("Green", NOW(), NOW());
+insert into dojos (name, created_at, updated_at)
+values ("Black", NOW(), NOW());
+select * from dojos;
+
+
+
+NINJAS TXT
+
+-- insert into ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+-- values ("Tom", "Bix", 25, NOW(), NOW(), 4);
+-- insert into ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+-- values ("Bill", "Bob", 18, NOW(), NOW(), 4);
+-- insert into ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+-- values ("Alan", "Phil", 100, NOW(), NOW(), 4);
+-- insert into ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+-- values ("Bill", "Zed", 30, NOW(), NOW(), 5);
+-- insert into ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+-- values ("Arthur", "Alan", 33, NOW(), NOW(), 5);
+-- insert into ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+-- values ("Noon", "Pheng", 54, NOW(), NOW(), 5);
+-- insert into ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+-- values ("Mark", "Maker", 31, NOW(), NOW(), 6);
+-- insert into ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+-- values ("Phillip", "Kong", 32, NOW(), NOW(), 6);
+-- insert into ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+-- values ("Andrew", "Ant", 29, NOW(), NOW(), 6);
+-- select * from dojos
+-- left join ninjas on dojos.id = ninjas.dojo_id
+-- where dojos.id = 4;
+-- left join ninjas on dojos.id = ninjas.dojo_id
+-- where dojos.id = (select dojo_id from ninjas order by dojo_id desc limit 1);
+select * from dojos
+where dojos.id = (select dojo_id from ninjas order by dojo_id desc limit 1);

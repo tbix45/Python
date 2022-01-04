@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    /* background-color: red; */
+}
+/* /* table{ */
+    /* height: 500px;
+    width: 500px; */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.one{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+}
+.two{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+}

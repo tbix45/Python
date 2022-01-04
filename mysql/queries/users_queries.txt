@@ -1,0 +1,14 @@
+-- insert into users (first_name, last_name, email, created_at, updated_at)
+-- values ("Tom", "Bixler", "tb@yahoo.com", NOW(), NOW());
+-- insert into users (first_name, last_name, email, created_at, updated_at)
+-- values ("Bob", "Bill", "bb@yahoo.com", NOW(), NOW());
+-- insert into users (first_name, last_name, email, created_at, updated_at)
+-- values ("Alex", "Bec", "Ab@yahoo.com", NOW(), NOW())
+-- where email = "tb@yahoo.com";
+-- where id = 3;
+-- update users set last_name = "Pancakes" 
+-- where id = 3;
+-- delete from users where id =3;
+select * from users
+-- order by first_name;
+order by first_name desc;
