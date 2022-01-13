@@ -23,3 +23,10 @@ function reverseArray(arr) {
     return arr
 }
 console.log(reverseArray([1, 2, 3]))
+
+if (2 === "2") {
+    console.log(true)
+} else {
+    console.log(false)
+}
+

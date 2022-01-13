@@ -21,9 +21,15 @@
 
 //another all parens valid
 // return boolean
-function isAllParensValid(str) {
-    var open = 0;
-    var closed = 0;
+// function isAllParensValid(str) {
+//     const bracesStack = [];
+//     const openBraces = "({[";
+//     const closeMatches = {
+//         ")": "(",
+//         "}": "{",
+//         "]": "[",
+//     };
 
-}
-console.log(isAllParensValid("({dojo]})"))
+// }
+// console.log(isAllParensValid("({dojo]})"))
+
