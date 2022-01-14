@@ -30,3 +30,9 @@ if (2 === "2") {
     console.log(false)
 }
 
+var myVar = null;
+if (myVar) {
+    console.log('myVar is not null')
+} else {
+    console.log("myVar is null")
+}
