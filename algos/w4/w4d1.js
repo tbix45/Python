@@ -41,6 +41,34 @@ class SLList {
             console.log(str)
         }
     }
+    //given a value go through list and return boolean if exists in list
+    contain(value) {
+        if (!this.head) {
+            console.log("Nothing in list! Doesn't contain anything!")
+            return false
+        }
+        var runner = this.head
+        while (runner) {
+            if (runner.value == value) {
+                console.log(`Value is: ${runner.value}`)
+                return true
+            }
+            runner = runner.next
+        }
+        //if through whole list and not found
+        return false
+    }
+
+    removeFromFront() {
+        if (this.head) {
+            var next = this.head.next
+            this.head.next = null
+            this.head = next
+        }
+    }
+
+
+
 }
 
 const sll = new SLList();
@@ -48,4 +76,6 @@ sll.addToFront(1)
 sll.addToFront(2)
 sll.addToFront(3)
 sll.addToFront(4)
+console.log(sll.contain(4))
+// sll.removeFromFront()
 sll.printValue()
