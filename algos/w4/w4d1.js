@@ -67,15 +67,29 @@ class SLList {
         }
     }
 
+    removeFromBack() {
+        if (!this.head) {
+            console.log("List is empty cant remove from back")
+            return
+        } else {
+            var runner = this.head
+            while (runner.next.next) {
+                runner = runner.next
+            }
+            runner.next = null
+            return
+        }
+    }
+
 
 
 }
 
 const sll = new SLList();
-sll.addToFront(1)
+// sll.addToFront(1)
 sll.addToFront(2)
 sll.addToFront(3)
 sll.addToFront(4)
 console.log(sll.contain(4))
-// sll.removeFromFront()
+sll.removeFromBack()
 sll.printValue()
