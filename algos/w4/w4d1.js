@@ -90,7 +90,7 @@ class SLList {
         var walker = this.head
         var min = this.head
 
-        while (runner.next != null) {
+        while (runner.next) {
             if (runner.next.value < min.value) {
                 min = runner.next
                 walker = runner
@@ -108,20 +108,52 @@ class SLList {
         return this
     }
     moveMaxToBack() {
-
+        if (!this.head) {
+            console.log("Nothing to move to back!")
+        }
+        var runner = this.head
+        var max = this.head
+        var walker = this.head
+        while (runner.next) {
+            if (runner.next.value > max.value) {
+                max = runner.next
+                walker = runner
+            }
+            runner = runner.next
+        }
+        if (max == this.head) {
+            runner.next = max
+            this.head = this.head.next
+            runner.next.next = null
+            return
+        }
+        walker.next = max.next
+        runner.next = max
+        max.next = null
+        console.log("Max value is:", max.value)
+        return
     }
 
+    prependValue(value, loc) {
 
+    }
+    appendValue(value, loc) {
+
+    }
 
 }
 
 const sll = new SLList();
-sll.addToFront(4)
-sll.addToFront(2)
 sll.addToFront(3)
+sll.addToFront(2)
 sll.addToFront(1)
-console.log(sll.contain(4))
+sll.addToFront(4)
+sll.addToFront(3)
+// console.log(sll.contain(4))
 sll.printValue()
+console.log("==============================")
 // sll.removeFromBack()
-sll.moveMinToFront()
+sll.moveMaxToBack()
+// sll.moveMinToFront()
 sll.printValue()
+console.log("==============================")
