@@ -81,15 +81,47 @@ class SLList {
         }
     }
 
+    moveMinToFront() {
+        if (!this.head) {
+            console.log("List to short to move Min to front")
+            return this
+        }
+        var runner = this.head
+        var walker = this.head
+        var min = this.head
+
+        while (runner.next != null) {
+            if (runner.next.value < min.value) {
+                min = runner.next
+                walker = runner
+            }
+            runner = runner.next
+        }
+        if (min.value == this.head.value) {
+            console.log("Min already at front")
+            return this
+        }
+        walker.next = min.next
+        min.next = this.head
+        this.head = min
+        console.log("Min value is", min.value)
+        return this
+    }
+    moveMaxToBack() {
+
+    }
+
 
 
 }
 
 const sll = new SLList();
-// sll.addToFront(1)
+sll.addToFront(4)
 sll.addToFront(2)
 sll.addToFront(3)
-sll.addToFront(4)
+sll.addToFront(1)
 console.log(sll.contain(4))
-sll.removeFromBack()
+sll.printValue()
+// sll.removeFromBack()
+sll.moveMinToFront()
 sll.printValue()
