@@ -7,8 +7,8 @@ function reverseString(string) {
     console.log(reversed)
 }
 reverseString('hello tom')
-reverseString('car')
-reverseString('welcome')
+// reverseString('car')
+// reverseString('welcome')
 
 
 
@@ -30,6 +30,7 @@ if (2 === "2") {
     console.log(false)
 }
 
+// var myVar = 1;
 var myVar = null;
 if (myVar) {
     console.log('myVar is not null')
