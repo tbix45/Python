@@ -9,8 +9,14 @@ function reverseString(string) {
 reverseString('hello tom')
 // reverseString('car')
 // reverseString('welcome')
-
-
+function reverseWord(word) {
+    var revWord = "";
+    for (let i = word.length - 1; i >= 0; i--) {
+        revWord += word[i]
+    }
+    console.log(revWord)
+}
+reverseWord("car")
 
 //reverse array 
 function reverseArray(arr) {
