@@ -18,6 +18,7 @@ function reverseWord(word) {
 }
 reverseWord("car")
 
+
 //reverse array 
 function reverseArray(arr) {
     for (var left = 0; left < Math.floor(arr.length / 2); left++) {
