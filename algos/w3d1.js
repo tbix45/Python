@@ -44,7 +44,6 @@ if (myVar) {
 } else {
     console.log("myVar is null")
 }
-
 function isPrime(n) {
     if (n < 2) {
         return `${n} is not a prime number`
