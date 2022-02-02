@@ -5,7 +5,7 @@ class Node {
         this.next = null
     }
 }
-
+//sll data structure
 class SLList {
     constructor() {
         this.head = null
